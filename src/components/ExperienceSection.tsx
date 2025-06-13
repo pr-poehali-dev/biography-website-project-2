@@ -44,41 +44,37 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-black">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4 font-montserrat">
+          <h2 className="text-4xl font-bold text-yellow-400 mb-4 font-montserrat">
             Опыт работы
           </h2>
-          <div className="w-20 h-1 bg-purple-600 mx-auto rounded-full"></div>
+          <div className="w-20 h-1 bg-yellow-500 mx-auto rounded-full"></div>
         </div>
 
         <div className="space-y-8">
           {experience.map((job, index) => (
             <div
               key={index}
-              className="bg-gradient-to-r from-white to-gray-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100"
+              className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-yellow-500"
             >
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="md:col-span-1">
                   <div className="flex items-center mb-4">
-                    <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mr-4">
-                      <Icon
-                        name="Briefcase"
-                        size={24}
-                        className="text-purple-600"
-                      />
+                    <div className="w-12 h-12 bg-yellow-500 rounded-xl flex items-center justify-center mr-4">
+                      <Icon name="Briefcase" size={24} className="text-black" />
                     </div>
-                    <span className="text-sm font-medium text-purple-600 bg-purple-50 px-3 py-1 rounded-full">
+                    <span className="text-sm font-medium text-black bg-yellow-400 px-3 py-1 rounded-full">
                       {job.period}
                     </span>
                   </div>
 
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  <h3 className="text-xl font-bold text-yellow-400 mb-2">
                     {job.position}
                   </h3>
 
-                  <h4 className="text-lg text-purple-600 font-semibold mb-4">
+                  <h4 className="text-lg text-yellow-500 font-semibold mb-4">
                     {job.company}
                   </h4>
 
@@ -86,7 +82,7 @@ const ExperienceSection = () => {
                     {job.technologies.map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-lg"
+                        className="text-xs bg-gray-700 text-gray-300 px-2 py-1 rounded-lg"
                       >
                         {tech}
                       </span>
@@ -95,11 +91,11 @@ const ExperienceSection = () => {
                 </div>
 
                 <div className="md:col-span-2">
-                  <p className="text-gray-600 leading-relaxed mb-6">
+                  <p className="text-gray-300 leading-relaxed mb-6">
                     {job.description}
                   </p>
 
-                  <h5 className="font-semibold text-gray-900 mb-3 flex items-center">
+                  <h5 className="font-semibold text-yellow-400 mb-3 flex items-center">
                     <Icon
                       name="Trophy"
                       size={18}
@@ -112,7 +108,7 @@ const ExperienceSection = () => {
                     {job.achievements.map((achievement, achIndex) => (
                       <li
                         key={achIndex}
-                        className="flex items-start text-gray-600"
+                        className="flex items-start text-gray-300"
                       >
                         <Icon
                           name="CheckCircle"

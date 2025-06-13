@@ -34,24 +34,24 @@ const SkillsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-900">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4 font-montserrat">
+          <h2 className="text-4xl font-bold text-yellow-400 mb-4 font-montserrat">
             Навыки и компетенции
           </h2>
-          <div className="w-20 h-1 bg-purple-600 mx-auto rounded-full"></div>
+          <div className="w-20 h-1 bg-yellow-500 mx-auto rounded-full"></div>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Technical Skills */}
           <div className="lg:col-span-2">
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+            <div className="bg-black rounded-2xl p-8 shadow-lg border border-yellow-500">
+              <h3 className="text-2xl font-bold text-yellow-400 mb-6 flex items-center">
                 <Icon
                   name="Settings"
                   size={24}
-                  className="text-purple-600 mr-3"
+                  className="text-yellow-500 mr-3"
                 />
                 Технические навыки
               </h3>
@@ -64,13 +64,13 @@ const SkillsSection = () => {
                         <Icon
                           name={skill.icon as any}
                           size={18}
-                          className="text-purple-600 mr-2"
+                          className="text-yellow-500 mr-2"
                         />
-                        <span className="font-medium text-gray-900">
+                        <span className="font-medium text-gray-300">
                           {skill.name}
                         </span>
                       </div>
-                      <span className="text-sm text-gray-500 font-medium">
+                      <span className="text-sm text-gray-400 font-medium">
                         {skill.level}%
                       </span>
                     </div>
@@ -87,8 +87,8 @@ const SkillsSection = () => {
           {/* Soft Skills & Tools */}
           <div className="space-y-8">
             {/* Soft Skills */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+            <div className="bg-black rounded-2xl p-8 shadow-lg border border-yellow-500">
+              <h3 className="text-2xl font-bold text-yellow-400 mb-6 flex items-center">
                 <Icon name="Heart" size={24} className="text-red-500 mr-3" />
                 Soft Skills
               </h3>
@@ -97,9 +97,9 @@ const SkillsSection = () => {
                 {softSkills.map((skill, index) => (
                   <div
                     key={index}
-                    className="flex items-center text-gray-600 hover:text-purple-600 transition-colors"
+                    className="flex items-center text-gray-300 hover:text-yellow-400 transition-colors"
                   >
-                    <div className="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
+                    <div className="w-2 h-2 bg-yellow-500 rounded-full mr-3"></div>
                     {skill}
                   </div>
                 ))}
@@ -107,8 +107,8 @@ const SkillsSection = () => {
             </div>
 
             {/* Tools */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+            <div className="bg-black rounded-2xl p-8 shadow-lg border border-yellow-500">
+              <h3 className="text-2xl font-bold text-yellow-400 mb-6 flex items-center">
                 <Icon name="Wrench" size={24} className="text-blue-500 mr-3" />
                 Инструменты
               </h3>
@@ -117,7 +117,7 @@ const SkillsSection = () => {
                 {tools.map((tool, index) => (
                   <span
                     key={index}
-                    className="bg-gray-100 hover:bg-purple-100 text-gray-700 hover:text-purple-700 px-3 py-2 rounded-lg text-sm font-medium transition-colors cursor-default"
+                    className="bg-gray-800 hover:bg-yellow-500 text-gray-300 hover:text-black px-3 py-2 rounded-lg text-sm font-medium transition-colors cursor-default"
                   >
                     {tool}
                   </span>

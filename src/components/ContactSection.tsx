@@ -37,13 +37,13 @@ const ContactSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-purple-600 via-purple-700 to-indigo-800 text-white">
+    <section className="py-20 bg-gradient-to-br from-black via-gray-900 to-yellow-900 text-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 font-montserrat">
+          <h2 className="text-4xl font-bold mb-4 font-montserrat text-yellow-400">
             Давайте работать вместе
           </h2>
-          <p className="text-xl text-purple-100 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Готов обсудить ваш проект и воплотить идеи в жизнь. Свяжитесь со
             мной любым удобным способом.
           </p>
@@ -58,17 +58,17 @@ const ContactSection = () => {
                   {contact.link ? (
                     <a
                       href={contact.link}
-                      className="flex items-center p-4 bg-white/10 rounded-xl hover:bg-white/20 transition-all duration-300 backdrop-blur-sm"
+                      className="flex items-center p-4 bg-yellow-500/20 rounded-xl hover:bg-yellow-500/30 transition-all duration-300 backdrop-blur-sm"
                     >
-                      <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+                      <div className="w-12 h-12 bg-yellow-500/30 rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
                         <Icon
                           name={contact.icon as any}
                           size={20}
-                          className="text-white"
+                          className="text-yellow-400"
                         />
                       </div>
                       <div>
-                        <p className="text-sm text-purple-200 font-medium">
+                        <p className="text-sm text-gray-400 font-medium">
                           {contact.label}
                         </p>
                         <p className="text-white font-semibold">
@@ -77,16 +77,16 @@ const ContactSection = () => {
                       </div>
                     </a>
                   ) : (
-                    <div className="flex items-center p-4 bg-white/10 rounded-xl backdrop-blur-sm">
-                      <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mr-4">
+                    <div className="flex items-center p-4 bg-yellow-500/20 rounded-xl backdrop-blur-sm">
+                      <div className="w-12 h-12 bg-yellow-500/30 rounded-lg flex items-center justify-center mr-4">
                         <Icon
                           name={contact.icon as any}
                           size={20}
-                          className="text-white"
+                          className="text-yellow-400"
                         />
                       </div>
                       <div>
-                        <p className="text-sm text-purple-200 font-medium">
+                        <p className="text-sm text-gray-400 font-medium">
                           {contact.label}
                         </p>
                         <p className="text-white font-semibold">
@@ -100,20 +100,20 @@ const ContactSection = () => {
             </div>
 
             {/* Social Links */}
-            <div className="pt-8 border-t border-white/20">
+            <div className="pt-8 border-t border-yellow-500/30">
               <h3 className="text-lg font-semibold mb-4">Социальные сети</h3>
               <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (
                   <a
                     key={index}
                     href={social.link}
-                    className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 hover:scale-110 transition-all duration-300 backdrop-blur-sm"
+                    className="w-12 h-12 bg-yellow-500/20 rounded-lg flex items-center justify-center hover:bg-yellow-500/30 hover:scale-110 transition-all duration-300 backdrop-blur-sm"
                     title={social.label}
                   >
                     <Icon
                       name={social.icon as any}
                       size={20}
-                      className="text-white"
+                      className="text-yellow-400"
                     />
                   </a>
                 ))}
@@ -123,9 +123,9 @@ const ContactSection = () => {
 
           {/* CTA Section */}
           <div className="text-center lg:text-left">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+            <div className="bg-yellow-500/20 backdrop-blur-sm rounded-2xl p-8 border border-yellow-500/30">
               <h3 className="text-2xl font-bold mb-4">Готовы начать проект?</h3>
-              <p className="text-purple-100 mb-6 leading-relaxed">
+              <p className="text-gray-300 mb-6 leading-relaxed">
                 Я всегда открыт для интересных проектов и новых возможностей.
                 Расскажите о вашей идее, и мы найдем способ воплотить её в
                 жизнь.
@@ -134,7 +134,7 @@ const ContactSection = () => {
               <div className="space-y-4">
                 <Button
                   size="lg"
-                  className="w-full bg-white text-purple-700 hover:bg-gray-100 font-semibold py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 shadow-lg"
+                  className="w-full bg-yellow-500 text-black hover:bg-yellow-600 font-semibold py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 shadow-lg"
                 >
                   <Icon name="MessageCircle" size={20} className="mr-2" />
                   Написать сообщение
@@ -143,7 +143,7 @@ const ContactSection = () => {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="w-full border-white/30 text-white hover:bg-white/10 font-semibold py-3 px-8 rounded-full transition-all duration-300"
+                  className="w-full border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/20 font-semibold py-3 px-8 rounded-full transition-all duration-300"
                 >
                   <Icon name="Calendar" size={20} className="mr-2" />
                   Запланировать звонок
@@ -154,8 +154,8 @@ const ContactSection = () => {
         </div>
 
         {/* Footer */}
-        <div className="text-center pt-16 border-t border-white/20 mt-16">
-          <p className="text-purple-200">
+        <div className="text-center pt-16 border-t border-yellow-500/30 mt-16">
+          <p className="text-gray-400">
             © 2024 Александр Иванов. Сделано с ❤️ и большой долей кофеина.
           </p>
         </div>

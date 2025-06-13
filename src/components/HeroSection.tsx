@@ -3,7 +3,7 @@ import Icon from "@/components/ui/icon";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 to-indigo-100 px-4">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 to-black px-4">
       <div className="max-w-4xl mx-auto text-center animate-fade-in">
         <div className="mb-8">
           <img
@@ -13,15 +13,15 @@ const HeroSection = () => {
           />
         </div>
 
-        <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4 font-montserrat">
+        <h1 className="text-5xl md:text-6xl font-bold text-yellow-400 mb-4 font-montserrat">
           1mm3phedr0ne
         </h1>
 
-        <p className="text-xl md:text-2xl text-gray-600 mb-6 font-light">
+        <p className="text-xl md:text-2xl text-gray-300 mb-6 font-light">
           Дизайнер продуктов, предприниматель, исследователь
         </p>
 
-        <p className="text-lg text-gray-500 max-w-2xl mx-auto mb-8 leading-relaxed">
+        <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-8 leading-relaxed">
           Создаю цифровые продукты, которые меняют жизнь людей к лучшему.
           Специализируюсь на UX/UI дизайне и разработке инновационных решений.
         </p>
@@ -29,7 +29,7 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button
             size="lg"
-            className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 shadow-lg"
+            className="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 shadow-lg"
           >
             <Icon name="Download" size={20} className="mr-2" />
             Скачать резюме
@@ -38,7 +38,7 @@ const HeroSection = () => {
           <Button
             variant="outline"
             size="lg"
-            className="border-purple-600 text-purple-600 hover:bg-purple-50 px-8 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105"
+            className="border-yellow-500 text-yellow-400 hover:bg-yellow-500 hover:text-black px-8 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105"
           >
             <Icon name="Mail" size={20} className="mr-2" />
             Связаться
@@ -48,19 +48,19 @@ const HeroSection = () => {
         <div className="flex justify-center space-x-6 mt-8">
           <a
             href="#"
-            className="text-gray-400 hover:text-purple-600 transition-colors duration-300"
+            className="text-gray-400 hover:text-yellow-400 transition-colors duration-300"
           >
             <Icon name="Github" size={24} />
           </a>
           <a
             href="#"
-            className="text-gray-400 hover:text-purple-600 transition-colors duration-300"
+            className="text-gray-400 hover:text-yellow-400 transition-colors duration-300"
           >
             <Icon name="Linkedin" size={24} />
           </a>
           <a
             href="#"
-            className="text-gray-400 hover:text-purple-600 transition-colors duration-300"
+            className="text-gray-400 hover:text-yellow-400 transition-colors duration-300"
           >
             <Icon name="Twitter" size={24} />
           </a>
