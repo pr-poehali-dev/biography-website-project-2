@@ -14,7 +14,7 @@ const HeroSection = () => {
         </div>
 
         <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4 font-montserrat">
-          Александр Иванов
+          1mm3phedr0ne
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-600 mb-6 font-light">
