@@ -7,9 +7,9 @@ const HeroSection = () => {
       <div className="max-w-4xl mx-auto text-center animate-fade-in">
         <div className="mb-8">
           <img
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face"
+            src="https://cdn.poehali.dev/files/3a90e361-b51d-417d-ad2a-585dd5a2f249.jpg"
             alt="Profile"
-            className="w-32 h-32 rounded-full mx-auto mb-6 shadow-lg border-4 border-white"
+            className="w-32 h-32 rounded-full mx-auto mb-6 shadow-lg border-4 border-white object-cover"
           />
         </div>
 
